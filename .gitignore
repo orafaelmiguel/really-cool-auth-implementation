@@ -51,6 +51,8 @@ web_modules/
 # Optional npm cache directory
 .npm
 
+rules.md
+
 # Optional eslint cache
 .eslintcache
 
@@ -68,6 +70,8 @@ web_modules/
 
 # Output of 'npm pack'
 *.tgz
+
+/migrations
 
 # Yarn Integrity file
 .yarn-integrity
