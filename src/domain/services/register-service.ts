@@ -1,8 +1,8 @@
-import { hashPassword } from "../../utils/passwordUtils";
+import { hashPassword } from "../../utils/password-utils";
 import { User } from "../entities/User";
 import { UserRepository } from "../repositories/UserRepository";
 
-export class AuthService {
+export class RegisterService {
   constructor(private userRepository: UserRepository) {}
 
   async register(name: string, email: string, password: string): Promise<User> {
