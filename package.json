@@ -1,11 +1,13 @@
 {
   "scripts": {
-    "dev": "tsx --watch src/http/server.ts"
+    "dev": "tsx --watch src/server.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.3.1",
+    "@types/bcrypt": "^5.0.2",
     "@types/express": "^5.0.0",
     "@types/node": "^22.13.4",
+    "bcrypt": "^5.1.1",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongodb": "^6.13.0",
