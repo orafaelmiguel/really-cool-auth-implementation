@@ -15,8 +15,12 @@ export class LoginController {
       const loggedUser = await this.loginAppUseCase.login(email, password)
 
       res.status(200).json(loggedUser)
-    } catch (error) {
-      res.status(401).json({ error: error })
+    } catch (err) {
+      if (err instanceof Error) {
+        res.status(401).json({ error: err.message })
+      } else {
+        res.status(500).json({ error: 'An unexpected error occurred' })
+      }
     }
   }
 }
